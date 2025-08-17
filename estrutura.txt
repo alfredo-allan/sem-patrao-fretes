@@ -1,0 +1,15 @@
+.
+├── assets
+│   ├── img
+│   │   ├── cartao1.jpeg
+│   │   └── cartao2.jpeg
+│   └── styles
+│       └── styles.css
+├── estrutura.txt
+├── favicon.png
+├── index.html
+├── js
+│   └── main.js
+└── vercel.json
+
+5 directories, 8 files
