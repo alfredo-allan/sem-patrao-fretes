@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <title>Sem Patrão Fretes - Carretos SP-Litoral</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts - Oswald -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="brand-name">🚚 SEM PATRÃO</h1>
+                    <p class="brand-subtitle">CARRETOS SP - LITORAL</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                        <span class="ms-2" id="themeText">Modo Escuro</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Image Slider -->
+    <div class="container">
+        <div class="image-slider" id="imageSlider">
+            <div class="slider-container" id="sliderContainer">
+                <div class="slide" style="background-image: url('./assets/img/cartao1.jpeg');">
+                    <div class="overlay"></div>
+                    <!-- <div class="slide-content">
+                        <h2 class="slide-title">CARRETOS RÁPIDOS</h2>
+                        <p class="slide-desc">São Paulo para o Litoral com segurança e agilidade</p>
+                    </div> -->
+                </div>
+                <div class="slide" style="background-image: url('./assets/img/cartao2.jpeg');">
+                    <div class="overlay"></div>
+                    <!-- <div class="slide-content">
+                        <h2 class="slide-title">CONFIABILIDADE</h2>
+                        <p class="slide-desc">Baixada e Interior de São Paulo - Deus é Fiel</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="slider-nav" id="sliderNav">
+                <div class="nav-dot active" data-slide="0"></div>
+                <div class="nav-dot" data-slide="1"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nossos Serviços</h2>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3 class="service-title">São Paulo - Litoral</h3>
+                        <p>Especialistas em carretos entre São Paulo e o Litoral. Rota diária com horários
+                            flexíveis!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="service-title">Baixada Santista</h3>
+                        <p>Cobertura completa da Baixada Santista e Interior. Conhecemos cada cantinho da região!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="service-title">Sem Patrão</h3>
+                        <p>Trabalho independente, preço justo e atendimento personalizado. Direto com quem faz!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Card -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div class="contact-info pulse-animation">
+                        <!-- <div class="contact-name">MÁRIO</div> -->
+                        <!-- <div class="contact-phone">
+                            <i class="fab fa-whatsapp me-2"></i>(11) 98165-3125
+                        </div> -->
+                        <div class="contact-location">São Paulo, Baixada e Interior de São Paulo</div>
+                        <div class="faith-quote mt-3">
+                            "A glória desta última casa será maior do que a primeira, diz o Senhor dos Exércitos, e
+                            neste lugar darei a paz, diz o Senhor"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Solicite seu Carreto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="customerName" class="form-label">Seu Nome</label>
+                            <input type="text" class="form-control" id="customerName"
+                                placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-whatsapp">
+                                <span class="text-contact-sp"><i class="fab fa-whatsapp me-2"></i>Falar com Mário no
+                                    WhatsApp</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Desenvolvido por Leap In Technology.</p>
+        </div>
+    </footer>
+
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bem-vindo ao Sem Patrão Fretes!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="close">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-icon text-center">
+                        <i class="fas fa-truck-fast fa-2x"></i>
+                    </div>
+                    <h4 class="text-center">Carretos São Paulo - Litoral</h4>
+                    <p class="mt-3"><strong>Especialistas em transporte para:</strong></p>
+                    <p>
+                        📦 São Paulo - Litoral<br>
+                        📦 Baixada Santista<br>
+                        📦 Interior de São Paulo
+                    </p>
+
+                    <div class="faith-quote mt-3 text-center">
+                        <small>"Deus é Fiel"</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
