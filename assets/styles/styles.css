@@ -304,10 +304,9 @@ h6 {
     padding: 1rem 2rem;
     border-radius: 50px;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -549,7 +548,13 @@ h6 {
         top: -40px;
     }
 
-    .text-contact-sp {
-        font-size: 12px;
-    }
+
+}
+
+
+.btn-whatsapp i.fab.fa-whatsapp {
+    font-size: 1.8rem;
+    /* aumenta o ícone do WhatsApp */
+    vertical-align: middle;
+    /* mantém alinhado com o texto */
 }
